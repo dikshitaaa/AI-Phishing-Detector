@@ -19,11 +19,10 @@
 ## 📸 Screenshots
 
 **1. Legitimate URL Analysis (Safe)**
-![Safe URL Analysis](./screenshots/legitimate.png)
+<img src="screenshots/legitimate.png" width="800" />
 
 **2. Phishing URL Analysis (Threat Detected)**
-![Phishing URL Analysis](./screenshots/fake.png)
-
+<img src="screenshots/fake.png" width="800" />
 ## 🛠️ Tech Stack
 
 *   **Frontend:** HTML5, CSS3, Vanilla JavaScript (Dark Theme UI)
