@@ -13,13 +13,16 @@
 *   **Dynamic Feature Extraction:** Automatically parses the URL to extract 13+ security parameters (length, special characters, sensitive keywords, HTTPS status) using Regex.
 *   **Explainable AI (XAI):** If a URL is flagged as malicious, the system provides specific reasons (e.g., "Contains @ symbol", "No HTTPS encryption") to help users understand the threat.
 *   **Risk Scoring Dashboard:** Calculates a risk score from 0 to 100 and displays a modern, cyber-security-themed dashboard.
+*   **Smart Override Logic:** Includes a whitelist for trusted domains (like Google, GitHub) and a smart verification system to prevent false positives on legitimate live websites.
 *   **Live HTTP Check:** Uses Python's `requests` library to ping the URL and check if the website is actually live.
 
 ## 📸 Screenshots
 
-Here is a preview of the PhishGuard Pro Dashboard:
+**1. Legitimate URL Analysis (Safe)**
+![Safe URL Analysis](screenshots/legitimate.png)
 
-![PhishGuard Dashboard](screenshots/demo.png)
+**2. Phishing URL Analysis (Threat Detected)**
+![Phishing URL Analysis](screenshots/fake.png)
 
 ## 🛠️ Tech Stack
 
@@ -36,26 +39,10 @@ AI-URL-detector/
 ├── templates/
 │   └── index.html           # Frontend UI
 ├── screenshots/
-│   └── demo.png             # Project UI Screenshot
+│   ├── legitimate.png       # Safe URL result screenshot
+│   └── fake.png             # Phishing URL result screenshot
 ├── AI_Model_Training.ipynb  # Jupyter Notebook (Model Training)
 ├── app.py                   # Flask Backend Server
 ├── ai_model.pkl             # Trained ML Model
 ├── phishing_url_dataset.csv # Dataset used for training
 └── README.md                # Project Documentation
-
-🚀 How to Run Locally
-Clone the repository:
-
-bash
-git clone https://github.com/dikshitaaa/AI-URL-detector.git
-cd AI-URL-detector
-Install dependencies:
-
-bash
-pip install flask pandas scikit-learn requests
-Run the application:
-
-bash
-python app.py
-Open in Browser:
-Go to http://127.0.0.1:5000
