@@ -19,10 +19,10 @@
 ## 📸 Screenshots
 
 **1. Legitimate URL Analysis (Safe)**
-![Safe URL Analysis](screenshots/legitimate.png)
+![Safe URL Analysis](./screenshots/legitimate.png)
 
 **2. Phishing URL Analysis (Threat Detected)**
-![Phishing URL Analysis](screenshots/fake.png)
+![Phishing URL Analysis](./screenshots/fake.png)
 
 ## 🛠️ Tech Stack
 
